@@ -1,0 +1,67 @@
+.Logo{
+  position: sticky;
+  width: 160px;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  
+}
+
+.Hero-Container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text{
+  font-size: 9em;
+  display: inline;
+}
+
+.section1{
+  position: relative;
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.section2 {
+  position: relative;
+  left:  50%;
+  top: 50%;
+  display: block;
+  justify-content: center;  
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.apply-button { 
+  margin: 15px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color:  #000;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+  .section2 > button:hover {
+  background-color: #333;
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 900px){
+  .hero-text{
+    font-size: 4em;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px){
+  .hero-text{
+    font-size: 6em;
+  }
+}
