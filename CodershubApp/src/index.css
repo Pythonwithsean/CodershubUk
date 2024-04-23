@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('fonts/Geist-Regular.woff2') format('woff2'),
+       url('fonts/Geist-Regular.woff') format('woff'),
+       url('fonts/Geist-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Geist', sans-serif;
+}
