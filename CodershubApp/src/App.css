@@ -1,5 +1,5 @@
 .Logo{
-  position: sticky;
+  position: fixed;
   width: 160px;
   cursor: pointer;
   left: 0;
@@ -7,37 +7,56 @@
   
 }
 
+h1{
+  font-size: 3em;
+  margin: 10px auto;
+  text-align: center;
+
+}
+
+
+ul{
+  list-style-type: disc;
+  margin: 10px auto;
+}
+
+
 .Hero-Container{
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .hero-text{
   font-size: 9em;
   display: inline;
+  margin: auto auto;
 }
 
 .section1{
-  position: relative;
-  display: block;
-  margin-left:  auto;
-  margin-right: auto;
-  margin-top: 30px;
+  flex-direction: column;
+  display: flex;
+  margin: auto atuo;
+  height: 300px;
 }
 
-.section2 {
-  position: relative;
-  left:  50%;
-  top: 50%;
-  display: block;
-  justify-content: center;  
-  align-items: center;
-  transform: translate(-50%, -50%);
+
+.paragraph{
+  font-size: 1.5em;
+  margin: 20px auto;
+  font-weight: 400;
+  text-align: center  ;
+  padding: 0 20px;
+  font-style: italic;
+
 }
 
 .apply-button { 
-  margin: 15px auto;
+  margin: 5px auto;
   display: block;
   padding: 10px 20px;
   font-size: 1.5em;
@@ -46,10 +65,11 @@
   color: white;
   border: none;
   border-radius: 5px;
+  transition: all 0.2ms ease-in
 }
 
-  .section2 > button:hover {
-  background-color: #333;
+.apply-button:hover {
+  background-color: #222222d0;
 }
 
 /* Media Query for Tablets */

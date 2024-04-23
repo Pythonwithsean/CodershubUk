@@ -19,3 +19,17 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+
+
+
+footer{
+  background-color: #000;
+  height:  50px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

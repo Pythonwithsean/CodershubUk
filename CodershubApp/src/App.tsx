@@ -11,6 +11,7 @@ function App() {
           <Route path="/" element={<Hero />} />
         </Routes>
       </Router>
+      <footer className="footer"></footer>
     </>
   );
 }
