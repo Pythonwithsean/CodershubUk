@@ -46,7 +46,7 @@ ul{
 
 
 .paragraph{
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 20px auto;
   font-weight: 400;
   text-align: center  ;
@@ -82,6 +82,7 @@ ul{
 /* Media Query for Mobile */
 @media screen and (max-width: 600px){
   .hero-text{
-    font-size: 6em;
+    
+    font-size: 4em;
   }
 }

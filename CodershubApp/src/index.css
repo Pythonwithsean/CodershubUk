@@ -20,7 +20,9 @@ body {
     overflow-x: hidden;
 }
 
-
+ .red-word{
+  color: red;
+ }
 
 footer{
   background-color: #000;

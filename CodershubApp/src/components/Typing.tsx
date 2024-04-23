@@ -4,11 +4,13 @@ export function Typing() {
   return (
     <TypeAnimation
       sequence={[
-        "Learn", // Types 'One'
-        1000, // Waits 1s
-        "Code", // Deletes 'One' and types 'Two'
+        "At CodersHub Uk",
         2000, // Waits 2s
-        "Create", // Types 'Three' without deleting 'Two'
+        "We Learn", // Types 'One'
+        1000, // Waits 1s
+        "We Code", // Deletes 'One' and types 'Two'
+        2000, // Waits 2s
+        "We Create", // Types 'Three' without deleting 'Two'
         2000, // Waits 2s
         () => {},
       ]}
