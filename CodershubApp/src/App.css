@@ -1,6 +1,6 @@
 .Logo{
-  position: fixed;
-  width: 160px;
+  position: absolute;
+  width: 140px;
   cursor: pointer;
   left: 0;
   top: 0;

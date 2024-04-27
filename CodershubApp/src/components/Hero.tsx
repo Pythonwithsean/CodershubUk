@@ -1,8 +1,9 @@
 import { Typing } from "./Typing";
-
+import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <>
+      <Navbar />
       <div className="Hero-Container">
         <section className="section1">
           <Typing />
@@ -27,6 +28,9 @@ const Hero = () => {
               React and Next for Fullstack Development, Golang for Backend
               Development
             </p>
+          </li>
+          <li>
+            <p className="paragraph">We are experienced in the Field</p>
           </li>
         </ul>
       </section>
