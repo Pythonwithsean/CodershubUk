@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
+    <> 
       <img src="../public/Logo.png" className="Logo" alt="Codershub" />
       <Router>
         <Routes>
