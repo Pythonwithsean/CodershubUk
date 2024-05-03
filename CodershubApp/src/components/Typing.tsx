@@ -4,7 +4,7 @@ export function Typing() {
   return (
     <TypeAnimation
       sequence={[
-        "At CodersHub Uk",
+        "At CodersHub UK",
         2000, // Waits 2s
         "We Learn", // Types 'One'
         1000, // Waits 1s
@@ -12,7 +12,7 @@ export function Typing() {
         2000, // Waits 2s
         "We Create", // Types 'Three' without deleting 'Two'
         2000, // Waits 2s
-        () => {},
+        () => { },
       ]}
       wrapper="span"
       cursor={true}

@@ -7,12 +7,12 @@ const Hero = () => {
       <div className="Hero-Container">
         <section className="section1">
           <Typing />
-        <button className="apply-button">Apply Now</button>
+          <button className="apply-button">Apply Now</button>
         </section>
       </div>
       <section className="section2">
         <h1>
-          About <span className="red-word">CodersHub</span> Uk
+          About <span className="red-word">CodersHub</span> UK
         </h1>
         <ul>
           <li>
@@ -21,7 +21,6 @@ const Hero = () => {
               range of courses to help you <strong>learn to code.</strong>
             </p>
           </li>
-
           <li>
             <p className="paragraph">
               We offer <strong>1 to 1 Classes</strong> Python Data science,
@@ -32,6 +31,7 @@ const Hero = () => {
           <li>
             <p className="paragraph">We are experienced in the Field</p>
           </li>
+
         </ul>
       </section>
     </>
