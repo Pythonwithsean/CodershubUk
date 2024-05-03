@@ -15,6 +15,7 @@ const Hero = () => {
           About <span className="red-word">CodersHub</span> UK
         </h1>
         <ul>
+
           <li>
             <p className="paragraph">
               We are a <strong>coding</strong> Tutoring Company that offers a
@@ -28,6 +29,7 @@ const Hero = () => {
               Development
             </p>
           </li>
+
           <li>
             <p className="paragraph">We are experienced in the Field</p>
           </li>
