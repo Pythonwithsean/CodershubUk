@@ -7,8 +7,8 @@ const Hero = () => {
       <div className="Hero-Container">
         <section className="section1">
           <Typing />
-        </section>
         <button className="apply-button">Apply Now</button>
+        </section>
       </div>
       <section className="section2">
         <h1>
