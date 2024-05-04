@@ -34,7 +34,7 @@ const Hero = () => {
       <br />
      </Container>
      
-      <Container>
+      <Container className="container">
       <section className="section2">
         <h1>
           Why <span className="red-word">CodersHub</span> UK
@@ -55,15 +55,15 @@ const Hero = () => {
             <img className="Moving-pic" src="../../public/MovingPic-1.gif" alt="Codershubuk"/>
             <Box component="section" sx={{ p: 2}} >
               <ul>
-                <li>
+                <li className="paragraph">
                   <strong>Learn to code</strong> with our expert tutors
                 </li>
                 <br/>
-                <li>
+                <li className="paragraph">
                   Learn in Demand <strong>Programming Languages</strong>
                 </li>
                 <br/>
-                <li>
+                <li className="paragraph">
                   <strong>1 to 1 Classes</strong> with our expert tutors
                 </li>
                 <br/>
