@@ -42,14 +42,14 @@ const Hero = () => {
         </h1>
        <Box  
         className="Semi-container"
-        height={450}
-        width={600}
-        my={5}
+        // height={450}
+        // width={600}
+        // my={5}
         mx={"auto"}
         display="flex"
         alignItems="center"
         justifyContent="center"
-        p={2}
+        // p={2}
         sx={{  }} 
         >
             <img className="Moving-pic" src="../../public/MovingPic-1.gif" alt="Codershubuk"/>
