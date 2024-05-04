@@ -24,6 +24,13 @@ function App() {
           <Link to="https://www.instagram.com/codershubuk/">
             <img src="../public/Instagram.png" className="footer-logo" alt="CodershubUk-instagram" />
           </Link>
+          <Link to="https://www.tiktok.com/@pythonwithsean">
+            <img src="../public/Tiktok.png" className="footer-logo" alt="CodershubUk-Tiktok" />
+          </Link>
+          <Link to="https://www.tiktok.com/@pythonwithsean">
+            <img src="../public/Youtube.png" className="footer-logo" alt="CodershubUk-Tiktok" />
+          </Link>
+
         </footer>
       </Router>
     </>
