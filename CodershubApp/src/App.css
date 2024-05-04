@@ -178,6 +178,7 @@ h3{
   border: none;
   border-radius: 5px;
   transition: all 0.4ms ease-in;
+  box-shadow: 2px 2px 0.4px 2px #000;  
 }
 
 .apply-button:hover {
