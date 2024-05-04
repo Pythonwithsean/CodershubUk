@@ -215,6 +215,7 @@ h3{
     position: relative;
     flex-direction: column;
   }
+
 }
 
 /* Media Query for Mobile */
@@ -234,6 +235,15 @@ h3{
 
   h1{
     font-size: 2.11em;
+
+  }
+  .Tech-Stack-Container{
+    width: 100%;
+    padding: 0;
+  }
+  .tech-stack-logo{
+    width: 30px;
+    height: 30px;
 
   }
 }
