@@ -39,9 +39,12 @@ const Hero = () => {
           <Box component="section" sx={{ p: 2 }}>
 
             <p className="paragraph">
-              We are a <strong>coding</strong> Tutoring Company that offers a
+              At CodershubUk we area a <strong>Coding</strong> Tutoring Company that offers a
               range of courses to help you <strong>learn to code.</strong>
             </p>
+          </Box>
+          <Box component="section" sx={{ p: 2 }}>
+            <p className="paragraph">I <strong>Built</strong> This <strong>Entire Site</strong> and many more from Scratch using Typescript, React, and Golang So <strong>i Know what i am saying</strong></p>
           </Box>
           <Box className="Box" component="section" sx={{ p: 2 }}>
             <p className="paragraph">
@@ -152,7 +155,7 @@ const Hero = () => {
       <br /><br /><br /><br />
       <Container className="container">
         <h1>
-          Our <span className="red-word">Tutors</span>
+          Our<span className="red-word"> Past Events</span>
         </h1>
         <Box component="section" sx={{ p: 2 }}>
           <p className="paragraph">

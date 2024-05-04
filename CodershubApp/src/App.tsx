@@ -16,15 +16,16 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <footer className="footer">
+          <p>© 2024 CodershubUK</p>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <Link to="https://www.instagram.com/codershubuk/">
+            <img src="../public/Instagram.png" className="footer-logo" alt="CodershubUk-instagram" />
+          </Link>
+        </footer>
       </Router>
-      {/* Footer For all Pages */}
-      <footer className="footer">
-        <p>© 2021 CodershubUK</p>
-
-        <p>Terms of Service</p>
-        <p>Privacy Policy</p>
-        <p>Cookie Policy</p>
-      </footer>
     </>
   );
 }
