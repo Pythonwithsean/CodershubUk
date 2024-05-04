@@ -3,8 +3,11 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Container, Box } from "@mui/material";
 import { Link } from "react-router-dom";
+import Carousel from "react-material-ui-carousel";
+
 const Hero = () => {
   const [showAnimation, setShowAnimation] = useState(false);
+  var imgs = ["../../public/Codershubukevent-6.jpg", "../../public/Codershubukevent-5.jpg", "../../public/Codershubukevent-4.jpg", "../../public/Codershubukevent-3.jpg", "../../public/Codershubukevent-2.jpg", "../../public/Codershubukevent-1.jpg"]
 
   useEffect(() => {
     function handleScroll() {
@@ -156,15 +159,50 @@ const Hero = () => {
       </Container>
       <br />
       <br /><br /><br /><br />
+
+      <br />
+      <br />
       <Container className="container">
         <h1>
           Our<span className="red-word"> Past Events</span>
         </h1>
         <Box component="section" sx={{ p: 2 }}>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            CodershubUK recently hosted an engaging and immersive physical coding camp, where our students delved into the exciting world of programming right here in London. Over the course of the event, participants were immersed in hands-on learning experiences, mastering essential programming languages such as Python, JavaScript, HTML, and CSS. Through interactive sessions and real-world projects, our students gained practical skills and valuable insights, empowering them to embark on their coding journey with confidence and enthusiasm.
+          </p>
+
+          <Carousel className="Carousel"
+            swipe={true}
+            stopAutoPlayOnHover={false}
+            autoPlay={true}
+            indicators={false}
+            animation="fade"
+            cycleNavigation={true}
+            duration={150}
+          >
+            {
+              imgs.map(img => {
+                return <img className="collage-image" src={`${img}`} alt={img} />
+              })
+            }
+          </Carousel>
+        </Box>
+      </Container>
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <Container>
+        <h1>
+          Projects we Build at<span className="red-word"> CodershubUK</span>
+        </h1>
+        <Box component="section" sx={{ p: 2 }}>
+          <p className="paragraph">
           </p>
         </Box>
+
       </Container>
 
     </>
