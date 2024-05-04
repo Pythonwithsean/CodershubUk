@@ -27,7 +27,7 @@ function App() {
           <Link to="https://www.tiktok.com/@pythonwithsean">
             <img src="../public/Tiktok.png" className="footer-logo" alt="CodershubUk-Tiktok" />
           </Link>
-          <Link to="https://www.tiktok.com/@pythonwithsean">
+          <Link to="https://www.youtube.com/channel/UCh5L0QwH27DuIfV73l4zEjA">
             <img src="../public/Youtube.png" className="footer-logo" alt="CodershubUk-Tiktok" />
           </Link>
 

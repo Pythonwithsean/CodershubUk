@@ -158,10 +158,11 @@ h3{
 
 
 .paragraph{
+  width: 100%; 
   font-size: 1.4em;
   margin: 15px auto;
   font-weight: 500px; 
-  padding: 0 20px;
+  padding: 0 8px;
   text-align: center;
 
 }
@@ -223,7 +224,6 @@ footer{
   height: 30px;
   border: none;
   cursor: pointer;
-  right:0;
 
 }
 
@@ -272,6 +272,15 @@ footer{
     height: 30px;
 
   }
+  footer > p{
+    font-size: 12px
+  }
+  
+  .footer-logo{
+    width: 20px;
+    height: 20px;
+  }
+  
 }
 
 /* Smaller Mobile Devices */ 
@@ -288,6 +297,10 @@ footer{
 
   .hero-text{
     font-size: 2em;
+  }
+ .footer-logo{
+    width: 20px;
+    height: 20px;
   }
 }
     
