@@ -6,10 +6,10 @@ export default function Navbar() {
       <nav className="navbar">
         <ul className="nav-links">
           <li className="NavButton">
-            <Link to="/Courses">Get Started</Link>
+            <Link to="/Login">Get Started</Link>
           </li>
           <li className="NavButton">
-            <Link to="/Contact">Pricing</Link>
+            <Link to="/Pricing">Pricing</Link>
           </li>
         </ul>
       </nav>

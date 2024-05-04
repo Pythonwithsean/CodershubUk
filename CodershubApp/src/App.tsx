@@ -1,14 +1,20 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hero from "./components/Hero";
+import NotFound from "./components/NotFound"
+import Login from "./components/Login"
 
 function App() {
   return (
-    <> 
-      <img src="../public/Logo.png" className="Logo" alt="Codershub" />
+    <>
       <Router>
+        <Link to="/">
+          <img src="../public/Logo.png" className="Logo" alt="Codershub" />
+        </Link>
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Hero />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       {/* Footer For all Pages */}
