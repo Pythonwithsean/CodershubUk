@@ -4,6 +4,10 @@
     width: max-content;
     margin-top: 20px;
     float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links{

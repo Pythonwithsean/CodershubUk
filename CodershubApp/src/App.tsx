@@ -11,7 +11,14 @@ function App() {
           <Route path="/" element={<Hero />} />
         </Routes>
       </Router>
-      <footer className="footer"></footer>
+      {/* Footer For all Pages */}
+      <footer className="footer">
+        <p>© 2021 CodershubUK</p>
+
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+      </footer>
     </>
   );
 }
