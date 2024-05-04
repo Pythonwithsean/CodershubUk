@@ -21,15 +21,15 @@
 .NavButton{
     width: 150px;
     text-align: center;
-    padding: .5rem .5rem .5rem .5rem ;
     background-color: transparent;
+    padding: 10px 10px;
     margin-right: 15px;
     cursor: pointer;
     background-color: #000;
-    border-radius: 10px;
 }
 .NavButton:hover {
     background-color: #fff;
+    border: 1px solid #000; 
     color: #000;
 }
 .NavButton:hover > a { 
@@ -41,7 +41,8 @@
     transition: all 0.1s ease 0s;
     color: #fff;
     text-decoration: none; 
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 
