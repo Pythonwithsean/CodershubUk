@@ -33,9 +33,10 @@ const Hero = () => {
       </section>
       <br />
      </Container>
+
+     {/* ------------------------------------------------------------------------------------------ */}
      
-      <Container className="container">
-      <section className="section2">
+      <Container className="container" style={{}}>
         <h1>
           Why <span className="red-word">CodersHub</span> UK
         </h1>
@@ -48,22 +49,21 @@ const Hero = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        gap={4}
         p={2}
         sx={{  }} 
         >
             <img className="Moving-pic" src="../../public/MovingPic-1.gif" alt="Codershubuk"/>
             <Box component="section" sx={{ p: 2}} >
               <ul>
-                <li className="paragraph">
+                <li className="list-paragraph">
                   <strong>Learn to code</strong> with our expert tutors
                 </li>
                 <br/>
-                <li className="paragraph">
+                <li className="list-paragraph">
                   Learn in Demand <strong>Programming Languages</strong>
                 </li>
                 <br/>
-                <li className="paragraph">
+                <li className="list-paragraph">
                   <strong>1 to 1 Classes</strong> with our expert tutors
                 </li>
                 <br/>
@@ -78,7 +78,6 @@ const Hero = () => {
           </p>
         </Box>
 
-        </section>
 
       </Container>
     </>

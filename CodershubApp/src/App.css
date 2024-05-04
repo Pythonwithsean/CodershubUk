@@ -9,9 +9,8 @@
 .Moving-pic{
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  object-fit: contain;
   z-index:  -1;
-
 }
 
 .container{
@@ -76,10 +75,10 @@ h1{
 
 .paragraph{
   font-size: 1.4em;
-  margin: 30px auto;
+  margin: 15px auto;
   font-weight: 500px; 
   padding: 0 20px;
-  text-align: center  ;
+  text-align: center;
 
 }
 
@@ -102,6 +101,22 @@ h1{
   color: #000;
 }
 
+
+.list-paragraph{ 
+  list-style: none;
+  font-size: 1.2em;
+  margin: 5px auto;
+  padding: 0 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  border: 2px solid black;
+  height: 100px;
+  text-align: center;
+
+}
+
 /* Media Query for Tablets */
 @media screen and (max-width: 900px){
 
@@ -111,6 +126,11 @@ h1{
   .hero-text{
     font-size: 4em;
   }
+
+  .Semi-container{
+    position: relative;
+    flex-direction: column;
+  }
 }
 
 /* Media Query for Mobile */
@@ -118,6 +138,10 @@ h1{
 
   .Hero-Container{
    height: 85vh; 
+  }
+
+  .Semi-container{
+    flex-direction: column;
   }
 
   .hero-text{    
@@ -135,6 +159,10 @@ h1{
 
   .Hero-Container{
     height: 70vh;
+  }
+
+  .Semi-container{
+    flex-direction: column;
   }
   
 
