@@ -30,7 +30,6 @@ function App() {
           <Link to="https://www.youtube.com/channel/UCh5L0QwH27DuIfV73l4zEjA">
             <img src="../public/Youtube.png" className="footer-logo" alt="CodershubUk-Tiktok" />
           </Link>
-
         </footer>
       </Router>
     </>

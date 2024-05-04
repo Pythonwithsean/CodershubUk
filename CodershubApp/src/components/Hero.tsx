@@ -2,6 +2,7 @@ import { Typing } from "./Typing";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Container, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 const Hero = () => {
   const [showAnimation, setShowAnimation] = useState(false);
 
@@ -29,7 +30,9 @@ const Hero = () => {
         <div className="Hero-Container">
           <section className="section1">
             <Typing />
-            <button className="apply-button">Apply Now</button>
+            <Link className="apply-button" to="/login">
+              Apply Now
+            </Link>
           </section>
         </div>
         <section className="section2">

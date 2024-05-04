@@ -5,12 +5,12 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <ul className="nav-links">
-          <li className="NavButton">
-            <Link to="/Login">Get Started</Link>
-          </li>
-          <li className="NavButton">
-            <Link to="/Pricing">Pricing</Link>
-          </li>
+          <Link className="NavButton" to="/Login">
+            Get Started
+          </Link>
+          <Link className="NavButton" to="/Pricing">
+            Pricing
+          </Link>
         </ul>
       </nav>
     </>
