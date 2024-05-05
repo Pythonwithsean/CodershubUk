@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { Container, Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import Carousel from "react-material-ui-carousel";
+// @ts-ignore
+import Faq from "react-faq-component";
+import { data, config, styles } from "./data";
 
 const Hero = () => {
   const [showAnimation, setShowAnimation] = useState(false);
@@ -241,11 +244,32 @@ const Hero = () => {
             <h4> Weekly Coding Wars</h4>
             <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking</p>
           </Grid>
-
-
-
         </Grid>
       </Container>
+      <br />
+      <br />
+      <Container>
+        <h1>Any Questions?</h1>
+        <Box className="Box" component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+          <p className="paragraph">
+            If you have any Enquires or Questions to ask please let us Know at Codershub UK we are happy to answer any questions you might have 😊
+            <br />
+            <br />
+            <strong>You can email us at <span className="red-word">Codershubuk@gmail.com</span></strong>
+          </p>
+        </Box>
+        <br />
+        <br />
+        <br />
+        <div>
+          <Faq
+            data={data}
+            styles={styles}
+            config={config}
+          />
+        </div>
+      </Container>
+
 
     </>
   );
