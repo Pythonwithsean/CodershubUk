@@ -1,7 +1,7 @@
 import { Typing } from "./Typing";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
-import { Container, Box } from "@mui/material";
+import { Container, Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import Carousel from "react-material-ui-carousel";
 
@@ -45,18 +45,18 @@ const Hero = () => {
           <Box component="section" sx={{ p: 2 }}>
 
             <p className="paragraph">
-              At CodershubUk we area a <strong>Coding</strong> Tutoring Company that offers a
+              At Codershub Uk we are a <strong>Coding</strong> Tutoring Agency that offers a
               range of courses to help you <strong>learn to code.</strong>
             </p>
           </Box>
           <Box component="section" sx={{ p: 2 }}>
-            <p className="paragraph">I <strong>Built</strong> This <strong>Entire Site</strong> and many more from Scratch using Typescript, React, and Golang So <strong>i Know what i am saying</strong></p>
+            <p className="paragraph">I <strong>Built</strong> This <strong>Entire Site</strong> and many more Applications from Scratch using Typescript, React, and Golang And I also Have a <strong>Computer Science Degree with a 1st </strong> so <strong>I Know what i am doing</strong>.</p>
           </Box>
           <Box className="Box" component="section" sx={{ p: 2 }}>
             <p className="paragraph">
-              We offer <strong>1 to 1 Classes</strong> Python Data science,
-              React and Next for Fullstack Development, Golang for Backend
-              Development </p> </Box> </section> <br /> </Container> <br /><br /><br /><br /><br /><br />
+              We offer <strong>1 to 1 Classes</strong> Python,
+              React and Next for Fullstack Web Development, Golang for Backend Web Services.
+            </p> </Box> </section> <br /> </Container> <br /><br /><br /><br /><br /><br />
       {/* ------------------------------------------------------------------------------------------ */}
 
 
@@ -72,8 +72,8 @@ const Hero = () => {
             Summer Coding Course
           </h1>
           <p className="paragraph">
-            Our Summer Coding Course is a 6 week course that will help you learn
-            to code in Python, React, Next, Golang
+            Our <strong>Summer Coding Course</strong> is a 4 week course that will help you learn
+            to code in Python, React, Next, Golang to Build Beautiful and Aesthetic Applications like this from scratch.
           </p>
         </Box>
 
@@ -86,9 +86,9 @@ const Hero = () => {
       {/* I want spaces Between Containers to remove everything from beting jampacked */}
       <Box>
         <Container className={`container ${showAnimation ? "slide-in-right" : ""}`}>
-          <h3>
-            Languages you will learn
-          </h3>
+          <h1>
+            Languages you will learn at Codershub UK
+          </h1>
           <Box component="section" sx={{ p: 2 }} style={{
             display: "flex",
             justifyContent: "space-around",
@@ -112,8 +112,6 @@ const Hero = () => {
       <br />
       <br /><br /><br /><br /><br />
 
-
-
       {/* ----------------------------------------------------------------------------------------------     */}
       <Container className="container" style={{}}>
         <h1>
@@ -135,25 +133,25 @@ const Hero = () => {
           <Box component="section" sx={{ p: 2 }} >
             <ul>
               <li className="list-paragraph">
-                <strong>Learn to code</strong> with our expert tutors
+                <strong>Learn to code</strong> from Actual <strong>Computer Scientist </strong> who Understand how to Program
               </li>
               <br />
+
               <li className="list-paragraph">
-                Learn in Demand <strong>Programming Languages</strong>
+                Learn in Demand <strong>Programming Languages</strong> that Companies are looking for.
               </li>
               <br />
+
               <li className="list-paragraph">
-                <strong>1 to 1 Classes</strong> with our expert tutors
+                At Codershub UK <strong>We Actually Build Projects, including a Portfolio Website and Github Setup</strong> So Companies see that you have built things in the past.
               </li>
-              <br />
             </ul>
           </Box>
         </Box>
+        <br />
         <Box className="Box" component="section" sx={{ p: 2, border: '1px dashed grey' }}>
           <p className="paragraph">
-            We offer <strong>1 to 1 Classes</strong> Python Data science,
-            React and Next for Fullstack Development, Golang for Backend
-            Development
+            The Current Technology Market is hard <strong>Learn what is Needed and Build Stuff</strong> Codershub UK ensures that Our Clients <strong> Actually Learn and Build Stuff</strong>
           </p>
         </Box>
       </Container>
@@ -168,9 +166,9 @@ const Hero = () => {
         </h1>
         <Box component="section" sx={{ p: 2 }}>
           <p className="paragraph">
-            CodershubUK recently hosted an engaging and immersive physical coding camp, where our students delved into the exciting world of programming right here in London. Over the course of the event, participants were immersed in hands-on learning experiences, mastering essential programming languages such as Python, JavaScript, HTML, and CSS. Through interactive sessions and real-world projects, our students gained practical skills and valuable insights, empowering them to embark on their coding journey with confidence and enthusiasm.
+            <strong>Codershub UK</strong> recently hosted an engaging and immersive physical coding camp, where our students delved into the exciting world of programming right here in London. Over the course of the event, participants were immersed in hands-on learning experiences, mastering essential programming languages such as Python, JavaScript, HTML, and CSS. Through interactive sessions and real-world projects, our students gained practical skills and valuable insights, empowering them to embark on their coding journey with confidence and enthusiasm.
           </p>
-
+          <br />
           <Carousel className="Carousel"
             swipe={true}
             stopAutoPlayOnHover={false}
@@ -196,13 +194,28 @@ const Hero = () => {
       <br />
       <Container>
         <h1>
-          Projects we Build at<span className="red-word"> CodershubUK</span>
+          Projects we Build at<span className="red-word"> Codershub UK</span>
         </h1>
         <Box component="section" sx={{ p: 2 }}>
           <p className="paragraph">
+            At Codershub UK <strong>Learning and Building is our Objective</strong> we ensure that all i students have a <strong>Github Account</strong> were they are able to put all their Projects
           </p>
+          <p className="paragraph"><strong>We Also Teach Students how to make a Portfolio Website where they can showcase all their Projects and Express Creativity</strong></p>
+          <h2>Projects</h2>
         </Box>
-
+      </Container>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={6} md={8}>
+            <img src="" alt="Portfolio" />
+          </Grid>
+          <Grid item xs={6} md={4}>
+          </Grid>
+          <Grid item xs={6} md={4}>
+          </Grid>
+          <Grid item xs={6} md={8}>
+          </Grid>
+        </Grid>
       </Container>
 
     </>

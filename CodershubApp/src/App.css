@@ -26,14 +26,17 @@
 h1{
   font-size: 3em;
   margin: 10px auto;
-  text-align:center;
+}
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
+h3{
+  font-size: 1.7em;
+  margin: 10px auto;
 }
 
-h3{
-  font-size: 2em;
-  margin: 10px auto;
-  text-align:center;
-
+h2{
+  font-size: 2.5em;
 }
 
 
@@ -194,11 +197,13 @@ h3{
   font-size: 1.2em;
   margin: 5px auto;
   padding: 0 20px;
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   justify-content: center;
+  height: 100%;
+  max-height: max-content;
   flex-direction: column; 
-  height: 100px;
   text-align: center;
 
 }
