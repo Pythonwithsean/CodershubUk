@@ -194,27 +194,56 @@ const Hero = () => {
       <br />
       <Container>
         <h1>
-          Projects we Build at<span className="red-word"> Codershub UK</span>
+          Projects We Build at<span className="red-word"> Codershub UK</span>
         </h1>
         <Box component="section" sx={{ p: 2 }}>
           <p className="paragraph">
             At Codershub UK <strong>Learning and Building is our Objective</strong> we ensure that all i students have a <strong>Github Account</strong> were they are able to put all their Projects
           </p>
           <p className="paragraph"><strong>We Also Teach Students how to make a Portfolio Website where they can showcase all their Projects and Express Creativity</strong></p>
-          <h2>Projects</h2>
         </Box>
       </Container>
       <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={6} md={8}>
-            <img src="" alt="Portfolio" />
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+          <Grid item xs={2} md={11} sm={4} style={{
+            margin: "0 auto"
+          }}>
+            <img src="../../public/Portfolio.png" alt="Portfolio" className="Grid-img" />
+            <h3>Portfolio website</h3>
+            <p className="paragraph">Students will get the chance to build a Portfolio Website where they are able to showcase what they have learnt and built</p>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={2} md={11} sm={4} style={{
+            margin: "0 auto"
+          }}>
+            <img src="../../public/TodoApp.PNG" alt="Todo-App" className="Grid-img" />
+            <h3>Todo App</h3>
+            <p className="paragraph">Students will get to make a ToDo App </p>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={2} md={11} sm={4} style={{
+            margin: "0 auto"
+          }}>
+            <img src="../../public/QuartzxSpaceNew.png" alt="Note-Taking-App" className="Grid-img" />
+            <h3>Note Taking App</h3>
+
+            <p className="paragraph"> Students will get the chance to Build a website that allows them to make Notes from scratch </p>
           </Grid>
-          <Grid item xs={6} md={8}>
+          <Grid item xs={2} md={11} sm={4} style={{
+            margin: "0 auto"
+          }} >
+            <img src="../../public/GamingCodershubUK.png" alt="Video-Games" className="Grid-img" />
+            <h3>Video Games</h3>
+            <p className="paragraph"> Students will get the Chance to Build games and play them competively with other Students</p>
           </Grid>
+          <Grid item xs={2} md={11} sm={4} style={{
+            margin: "0 auto"
+          }} >
+            <img src="../../public/CodingWarsCodershubUK.jpg" alt="Hackerthons" className="Grid-img" />
+            <h4> Weekly Coding Wars</h4>
+            <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking</p>
+          </Grid>
+
+
+
         </Grid>
       </Container>
 

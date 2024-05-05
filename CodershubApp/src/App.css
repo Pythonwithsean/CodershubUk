@@ -22,6 +22,12 @@
 
 }
 
+.Grid-img{
+  object-fit: contain;
+  width: 100%;
+  margin: 0 auto;
+  
+}
 
 h1{
   font-size: 3em;
@@ -326,5 +332,6 @@ footer{
     width: 20px;
     height: 20px;
   }
+
 }
     
