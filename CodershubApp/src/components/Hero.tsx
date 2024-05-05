@@ -241,7 +241,7 @@ const Hero = () => {
             margin: "0 auto"
           }} >
             <img src="../../public/CodingWarsCodershubUK.jpg" alt="Hackerthons" className="Grid-img" />
-            <h4> Weekly Coding Wars</h4>
+            <h3> Weekly Coding Wars</h3>
             <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking</p>
           </Grid>
         </Grid>
@@ -256,6 +256,9 @@ const Hero = () => {
             <br />
             <br />
             <strong>You can email us at <span className="red-word">Codershubuk@gmail.com</span></strong>
+            <br />
+            <br />
+            <strong>You can call us at<span className="red-word"> 07375061919 </span></strong>
           </p>
         </Box>
         <br />
