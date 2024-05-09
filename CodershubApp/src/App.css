@@ -2,6 +2,8 @@
     width: 140px;
   height: 130px;
   cursor: pointer;
+  position: absolute;
+  z-index: 9999;
   left: 0;
   top: 0;
   

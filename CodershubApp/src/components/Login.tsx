@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Session, createClient } from '@supabase/supabase-js'
 import { Auth } from '@supabase/auth-ui-react'
+import "../styles/login.css"
 // import dotenv from "dotenv"
 // dotenv.config()
 
@@ -25,8 +26,8 @@ export default function Login() {
 
   if (!session) {
     return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <div style={{ maxWidth: '400px', padding: '20px', backgroundColor: 'white', borderRadius: '10px' }}>
+    <div className='login-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div className='login-semicontainer' style={{  padding: '20px', backgroundColor: 'white', borderRadius: '10px' }}>
       <Auth
         supabaseClient={supabase}
         appearance={{
@@ -40,7 +41,7 @@ export default function Login() {
             message: { color: 'black' },
           },
         }}
-        providers={['google', 'github', 'twitter']}
+        providers={['google', 'github' ]}
       />
     </div>
   </div>)

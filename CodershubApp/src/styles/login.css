@@ -1,0 +1,22 @@
+.login-container{
+
+
+}
+
+.login-semicontainer{
+	border: 2px solid black;
+	box-shadow: 5px 5px 2px 1.2px black;
+	width:  100%;
+	padding: 20px 20px;
+	max-width: 400px;
+}
+
+.login-semicontainer button{
+	padding: 10px 0px;
+}
+
+
+.login-semicontainer input[type="email"], .login-semicontainer input[type="password"]{
+	padding: 10px 0;
+}
+
