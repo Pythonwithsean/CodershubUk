@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <Link to="/">
-          <img src="../public/Logo.png" className="Logo" alt="Codershub" />
+          <img src="/Logo.png" className="Logo" alt="Codershub" />
         </Link>
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -22,13 +22,13 @@ function App() {
           <p>Privacy Policy</p>
           <p>Cookie Policy</p>
           <Link to="https://www.instagram.com/codershubuk/">
-            <img src="../public/Instagram.png" className="footer-logo" alt="CodershubUk-instagram" />
+            <img src="/Instagram.png" className="footer-logo" alt="CodershubUk-instagram" />
           </Link>
           <Link to="https://www.tiktok.com/@pythonwithsean">
-            <img src="../public/Tiktok.png" className="footer-logo" alt="CodershubUk-Tiktok" />
+            <img src="/Tiktok.png" className="footer-logo" alt="CodershubUk-Tiktok" />
           </Link>
           <Link to="https://www.youtube.com/channel/UCh5L0QwH27DuIfV73l4zEjA">
-            <img src="../public/Youtube.png" className="footer-logo" alt="CodershubUk-Tiktok" />
+            <img src="/Youtube.png" className="footer-logo" alt="CodershubUk-Tiktok" />
           </Link>
         </footer>
       </Router>

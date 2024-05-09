@@ -7,23 +7,19 @@ import Carousel from "react-material-ui-carousel";
 // @ts-ignore
 import Faq from "react-faq-component";
 import { data, config, styles } from "./data";
-
 const Hero = () => {
   const [showAnimation, setShowAnimation] = useState(false);
-  var imgs = ["../../public/Codershubukevent-6.jpg", "../../public/Codershubukevent-5.jpg", "../../public/Codershubukevent-4.jpg", "../../public/Codershubukevent-3.jpg", "../../public/Codershubukevent-2.jpg", "../../public/Codershubukevent-1.jpg"]
-
+  var imgs = ["/Codershubukevent-6.jpg", "/Codershubukevent-5.jpg", "/Codershubukevent-4.jpg", "/Codershubukevent-3.jpg", "/Codershubukevent-2.jpg", "/Codershubukevent-1.jpg"]
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
-      const triggerPosition = 600; // Adjust this value to set the scroll trigger point
-
+      const triggerPosition = 600;
       if (scrollPosition > triggerPosition) {
         setShowAnimation(true);
       } else {
         setShowAnimation(false);
       }
     }
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -69,7 +65,7 @@ const Hero = () => {
         }
       }>
 
-        <img className="Hero-Img" src="../../public/SummerCoding Course.png" alt="coderhubUk" />
+        <img className="Hero-Img" src="/SummerCoding Course.png" alt="coderhubUk" />
         <Box component="section" sx={{ p: 2 }}>
           <h1>
             Summer Coding Course
@@ -132,7 +128,7 @@ const Hero = () => {
           // p={2}
           sx={{}}
         >
-          <img className="Moving-pic" src="../../public/MovingPic-1.gif" alt="Codershubuk" />
+          <img className="Moving-pic" src="/MovingPic-1.gif" alt="Codershubuk" />
           <Box component="section" sx={{ p: 2 }} >
             <ul>
               <li className="list-paragraph">
@@ -182,8 +178,8 @@ const Hero = () => {
             duration={150}
           >
             {
-              imgs.map(img => {
-                return <img className="collage-image" src={`${img}`} alt={img} />
+              imgs.map((img,i) => {
+                return <img className="collage-image" key={i} src={`${img}`} alt={img} />
               })
             }
           </Carousel>
@@ -211,21 +207,21 @@ const Hero = () => {
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }}>
-            <img src="../../public/Portfolio.png" alt="Portfolio" className="Grid-img" />
+            <img src="/Portfolio.png" alt="Portfolio" className="Grid-img" />
             <h3>Portfolio website</h3>
             <p className="paragraph">Students will get the chance to build a Portfolio Website where they are able to showcase what they have learnt and built</p>
           </Grid>
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }}>
-            <img src="../../public/TodoApp.PNG" alt="Todo-App" className="Grid-img" />
+            <img src="/TodoApp.PNG" alt="Todo-App" className="Grid-img" />
             <h3>Todo App</h3>
             <p className="paragraph">Students will get to make a ToDo App </p>
           </Grid>
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }}>
-            <img src="../../public/QuartzxSpaceNew.png" alt="Note-Taking-App" className="Grid-img" />
+            <img src="/QuartzxSpaceNew.png" alt="Note-Taking-App" className="Grid-img" />
             <h3>Note Taking App</h3>
 
             <p className="paragraph"> Students will get the chance to Build a website that allows them to make Notes from scratch </p>
@@ -233,14 +229,14 @@ const Hero = () => {
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }} >
-            <img src="../../public/GamingCodershubUK.png" alt="Video-Games" className="Grid-img" />
+            <img src="/GamingCodershubUK.png" alt="Video-Games" className="Grid-img" />
             <h3>Video Games</h3>
             <p className="paragraph"> Students will get the Chance to Build games and play them competively with other Students</p>
           </Grid>
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }} >
-            <img src="../../public/CodingWarsCodershubUK.jpg" alt="Hackerthons" className="Grid-img" />
+            <img src="/CodingWarsCodershubUK.jpg" alt="Hackerthons" className="Grid-img" />
             <h3> Weekly Coding Wars</h3>
             <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking</p>
           </Grid>
