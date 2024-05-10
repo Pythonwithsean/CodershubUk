@@ -56,6 +56,7 @@ const Hero = () => {
               We offer <strong>1 to 1 Classes</strong> Python,
               React and Next for Fullstack Web Development, Golang for Backend Web Services.
             </p> </Box> </section> <br /> </Container> <br /><br /><br /><br /><br /><br />
+
       {/* ------------------------------------------------------------------------------------------ */}
 
 
@@ -75,7 +76,6 @@ const Hero = () => {
             to code in Python, React, Next, Golang to Build Beautiful and Aesthetic Applications like this from scratch.
           </p>
         </Box>
-
       </Container>
       <br />
       <br /><br /><br /><br />

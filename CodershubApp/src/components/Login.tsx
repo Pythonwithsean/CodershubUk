@@ -1,26 +1,27 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import { Session, createClient } from '@supabase/supabase-js'
 import { Auth } from '@supabase/auth-ui-react'
 import "../styles/login.css"
-// import dotenv from "dotenv"
-// dotenv.config()
+const PROJECT_URL="https://talvpjiamafodpwvpkqz.supabase.co"
+const PROJECT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRhbHZwamlhbWFmb2Rwd3Zwa3F6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxMzg2NzQ1MCwiZXhwIjoyMDI5NDQzNDUwfQ.4aAAYjVkQwBknWxZEih8g8DHwHMuerNYas7SVAX0VSg"
+const supabase = createClient(PROJECT_URL,PROJECT_TOKEN)
 
+function logout():void {
+  localStorage.removeItem("sb-talvpjiamafodpwvpkqz-auth-token")
+  location.href="/" 
+}
 
-const supabase = createClient('https://talvpjiamafodpwvpkqz.supabase.co', "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRhbHZwamlhbWFmb2Rwd3Zwa3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM4Njc0NTAsImV4cCI6MjAyOTQ0MzQ1MH0.wCtgQvYuQ-1NDXmoBrh5Ip3OYEw3gqJFur1dkjt5-Aw")
- 
 export default function Login() {
    const [session, setSession] = useState<Session | null>(null)
    useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
     })
-
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
     })
-
     return () => subscription.unsubscribe()
   }, [])
 
@@ -38,15 +39,17 @@ export default function Login() {
             label: { color: 'black' },
             input: { borderColor: 'black' },
             loader: { color: 'black' },
-            message: { color: 'black' },
+            message: { color: 'red' },
           },
-        }}
+        }} 
         providers={['google', 'github' ]}
       />
     </div>
   </div>)
   }
   else {
-    return (<div>Logged in!</div>)
+    return (<div><h1>Dashboard</h1>
+      <button onClick={logout}>LogOut</button>
+    </div>)
   }
 }
