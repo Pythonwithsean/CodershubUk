@@ -28,6 +28,7 @@
     padding: 10px 10px;
     margin-right: 15px;
     cursor: pointer;
+    z-index: 999;
     background-color: #000;
     box-shadow: 2px 5px 0.4px 2px #000;  
 }
@@ -49,12 +50,69 @@
     font-weight: 500;
 }
 
+/* Styles for the hamburger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    display: none;
+    background-color: #fff;
+  }
+
+  .bm-menu-wrap{
+    display: none;
+    z-index: 999;
+
+  }
+
+
+  .bm-burger-bars{
+    background-color: #000;
+  }
+  
+  /* Additional styles for the menu */
+  .bm-menu {
+    background: #000; /* Background color */
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Styles for the menu items */
+  .menu-item {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s; /* Smooth color transition */
+    padding: 10px 2px;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .menu-item:hover {
+    background-color: #dbdada4f;
+  }
+  .bm-cross {
+    background: #fff; 
+  } 
+  
+  
+
+
 
 
 /* Mobile Media Query for mobile  */
 
 @media screen and (max-width: 600px) {
-    .navbar {
+ 
+    .bm-burger-button{
+        display: block;
+    }
+
+    .bm-menu-wrap{
+        display: block;
+    }
+    .NavButton{
         display: none;
-    }    
+    }
+  
 }

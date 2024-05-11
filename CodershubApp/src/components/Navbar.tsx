@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+//@ts-ignore
 import "../styles/Navbar.css";
+import { Link } from 'react-router-dom';
+import HamburgerMenu from './HamburgerMenu';
 export default function Navbar() {
   return (
     <>
@@ -11,6 +13,8 @@ export default function Navbar() {
           <Link className="NavButton" to="/pricing">
             Pricing
           </Link>
+          <HamburgerMenu/>
+
         </ul>
       </nav>
     </>

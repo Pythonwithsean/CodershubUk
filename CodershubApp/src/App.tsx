@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hero from "./components/Hero";
 import NotFound from "./components/NotFound"
 import Login from "./components/Login"
+import Dashboard from "./components/Dashboard";
 import  Pricing  from "./components/Pricing";
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <img src="/Logo.png" className="Logo" alt="Codershub" />
         </Link>
         <Routes>
-          <Route path="/auth" element={<Login></Login>} />
+          <Route path="/auth" element={<Login><Dashboard/></Login>} />
           <Route path="/pricing" element={<Pricing/>}/>
           <Route path="/" element={<Hero />} />
           <Route path="*" element={<NotFound />} />

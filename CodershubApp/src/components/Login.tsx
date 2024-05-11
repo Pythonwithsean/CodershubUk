@@ -11,7 +11,11 @@ function logout():void {
   location.href="/" 
 }
 
-export default function Login() {
+type loginProps ={ 
+  children: JSX.Element
+}
+
+export default function Login({children}: loginProps) {
    const [session, setSession] = useState<Session | null>(null)
    useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -31,25 +35,28 @@ export default function Login() {
     <div className='login-semicontainer' style={{  padding: '20px', backgroundColor: 'white', borderRadius: '10px' }}>
       <Auth
         supabaseClient={supabase}
+        providers={['google', 'github' ]}
         appearance={{
           style: {
-            button: { background: 'black', color: 'white' },
+            button: { background: 'black', color: 'white' },  
             container: { backgroundColor: 'white' },
             anchor: { color: 'black' },
             label: { color: 'black' },
             input: { borderColor: 'black' },
             loader: { color: 'black' },
-            message: { color: 'red' },
+            message: { color: 'red' },            
           },
         }} 
-        providers={['google', 'github' ]}
       />
+
+
     </div>
   </div>)
   }
   else {
-    return (<div><h1>Dashboard</h1>
+    return (<>     
+    {children}
       <button onClick={logout}>LogOut</button>
-    </div>)
+    </>)
   }
 }

@@ -76,6 +76,7 @@ const Hero = () => {
             to code in Python, React, Next, Golang to Build Beautiful and Aesthetic Applications like this from scratch.
           </p>
         </Box>
+
       </Container>
       <br />
       <br /><br /><br /><br />
@@ -203,7 +204,7 @@ const Hero = () => {
         </Box>
       </Container>
       <Container>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 12 }}>
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }}>

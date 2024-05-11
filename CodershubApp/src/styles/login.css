@@ -5,7 +5,9 @@
 	box-shadow: 5px 5px 2px 1.2px black;
 	width:  100%;
 	padding: 20px 20px;
-	max-width: 400px;
+	max-width: 360px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .login-semicontainer button{
