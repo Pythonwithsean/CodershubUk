@@ -8,7 +8,8 @@ export default function Pricing() {
 				<Box component="section" sx={{ p: 2 }}>
 					<h1>Get Ahead of Others Today!</h1>
 					<h3>Choose the best plan for your needs</h3>
-					<div></div>
+					<div>
+					</div>
         </Box>
 
 	

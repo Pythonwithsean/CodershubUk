@@ -7,14 +7,13 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <ul className="nav-links">
-          <Link className="NavButton" to="/auth">
+          <Link className="NavButton" to="/login">
             Get Started
           </Link>
           <Link className="NavButton" to="/pricing">
             Pricing
           </Link>
-          <HamburgerMenu/>
-
+          <HamburgerMenu />
         </ul>
       </nav>
     </>
