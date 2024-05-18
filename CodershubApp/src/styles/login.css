@@ -11,12 +11,13 @@
 }
 
 .login-semicontainer button{
+	border: 2px solid  green;
 	padding: 10px 0px;
+	font-size: 1.2rem;
 }
-
 
 .login-semicontainer input[type="email"], .login-semicontainer input[type="password"]{
 	padding: 10px 2px;
-
+	font-size: 1rem;
 }
 

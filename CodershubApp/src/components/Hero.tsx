@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="Hero-Container">
           <section className="section1">
             <Typing />
-            <Link className="apply-button" to="/login">
+            <Link className="apply-button" to="/auth">
               Apply Now
             </Link>
           </section>
@@ -179,7 +179,7 @@ const Hero = () => {
             duration={150}
           >
             {
-              imgs.map((img,i) => {
+              imgs.map((img, i) => {
                 return <img className="collage-image" key={i} src={`${img}`} alt={img} />
               })
             }

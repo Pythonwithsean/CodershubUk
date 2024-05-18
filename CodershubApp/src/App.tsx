@@ -15,7 +15,7 @@ function App() {
           <img src="/Logo.png" className="Logo" alt="Codershub" />
         </Link>
         <Routes>
-          <Route path="/login" element={<Login><Dashboard /></Login>} />
+          <Route path="/auth" element={<Login><Dashboard /></Login>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/" element={<Hero />} />

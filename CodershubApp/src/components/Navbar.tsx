@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <ul className="nav-links">
-          <Link className="NavButton" to="/login">
+          <Link className="NavButton" to="/auth">
             Get Started
           </Link>
           <Link className="NavButton" to="/pricing">
