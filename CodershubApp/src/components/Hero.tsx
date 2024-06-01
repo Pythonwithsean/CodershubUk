@@ -203,44 +203,30 @@ const Hero = () => {
           <p className="paragraph"><strong>We Also Teach Students how to make a Portfolio Website where they can showcase all their Projects and Express Creativity</strong></p>
         </Box>
       </Container>
-      <Container>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 12 }}>
-          <Grid item xs={2} md={11} sm={4} style={{
-            margin: "0 auto"
-          }}>
-            <img src="/Portfolio.png" alt="Portfolio" className="Grid-img" />
-            <h3>Portfolio website</h3>
-            <p className="paragraph">Students will get the chance to build a Portfolio Website where they are able to showcase what they have learnt and built</p>
-          </Grid>
-          <Grid item xs={2} md={11} sm={4} style={{
-            margin: "0 auto"
-          }}>
-            <img src="/TodoApp.PNG" alt="Todo-App" className="Grid-img" />
-            <h3>Todo App</h3>
-            <p className="paragraph">Students will get to make a ToDo App </p>
-          </Grid>
-          <Grid item xs={2} md={11} sm={4} style={{
-            margin: "0 auto"
-          }}>
-            <img src="/QuartzxSpaceNew.png" alt="Note-Taking-App" className="Grid-img" />
-            <h3>Note Taking App</h3>
-
-            <p className="paragraph"> Students will get the chance to Build a website that allows them to make Notes from scratch </p>
-          </Grid>
+      <Container>  
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }} >
             <img src="/GamingCodershubUK.png" alt="Video-Games" className="Grid-img" />
-            <h3>Video Games</h3>
-            <p className="paragraph"> Students will get the Chance to Build games and play them competively with other Students</p>
+            <h3>Fun and Exciting Video Games</h3>
+            <p className="paragraph">Students will get the chance to be able to play games They will learn the fundamentals of game design, coding, and teamwork while exploring various genres and platforms. This hands-on experience not only fosters creativity but also enhances problem-solving skills and technical knowledge.
+            </p>
           </Grid>
           <Grid item xs={2} md={11} sm={4} style={{
             margin: "0 auto"
           }} >
             <img src="/CodingWarsCodershubUK.jpg" alt="Hackerthons" className="Grid-img" />
             <h3> Weekly Coding Wars</h3>
-            <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking</p>
+            <p className="paragraph">Students will get the chance to Solve Weekly Problems with the Coding Skills to Help with Problem Solving and Algorithmic Thinking. This hands-on experience not only fosters creativity but also enhances problem-solving skills and technical knowledge.</p>
           </Grid>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 12 }}>
+              <Grid item xs={2} md={11} sm={4} style={{
+                margin: "0 auto"
+              }}>
+                <img src="/Portfolio.png" alt="Portfolio" className="Grid-img" />
+                <h3>Portfolio website</h3>
+                <p className="paragraph">Students will get the chance to build a portfolio website where they can showcase what they have learned and built. This website will serve as a professional platform for them to display their projects, demonstrate their coding skills, and highlight their creativity.</p>
+              </Grid>
         </Grid>
       </Container>
       <br />
