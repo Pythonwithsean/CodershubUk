@@ -1,5 +1,6 @@
 import { Container, Box } from "@mui/material";
 import "../App.css";
+import "../styles/pricingpage.css"
 import Navbar from "./Navbar";
 
 export default function Pricing() { 

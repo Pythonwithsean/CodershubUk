@@ -7,7 +7,9 @@
   left: 0;
   top: 0;
   
-} .Moving-pic{
+} 
+
+.Moving-pic{
   width: 100%;
   height: 100%;
   max-width: 600px;
@@ -260,7 +262,7 @@ footer{
 
 }
 
-/* Styles for Pricing Page  */
+/* Styles for Pricing Page 
 .container {
   background-color: #fff;
   color: #000;
@@ -345,7 +347,7 @@ button {
 button:hover {
   background-color: #333;
 }
-
+ */
 /* Media Query for Tablets */
 @media screen and (max-width: 900px){
 

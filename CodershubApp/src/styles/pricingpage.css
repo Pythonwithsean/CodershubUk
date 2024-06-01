@@ -1,0 +1,79 @@
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.pricing-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pricing-option {
+  background-color: #f9f9f9;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-option:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-option h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.pricing-option p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.pricing-option ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-option ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pricing-option ul li::before {
+  content: "•";
+  color: #000;
+  position: absolute;
+  left: 0;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
