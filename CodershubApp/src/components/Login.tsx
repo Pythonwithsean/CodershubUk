@@ -8,9 +8,11 @@ const PROJECT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFz
 const supabase = createClient(PROJECT_URL, PROJECT_TOKEN)
 
 function logout(): void {
+  supabase.auth.signOut()
   localStorage.removeItem("sb-talvpjiamafodpwvpkqz-auth-token")
   location.href = "/"
 }
+
 // Function That Gets usersName without @
 function getUserNameFromEmail(email: string | undefined): string{
   if( typeof email === "undefined"){ 
@@ -81,8 +83,10 @@ export default function Login({ children }: loginProps) {
       </div>)
   }
   else {
-    return (<>
-    <h1>Welcome {getUserNameFromEmail(session.user.email)}</h1>
+    return (
+    <>
+    <h3>Welcome {getUserNameFromEmail(session.user.email)}</h3>
+    <br />
       {children}
       <button onClick={logout}>LogOut</button>
     </>)
