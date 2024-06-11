@@ -20,7 +20,6 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/" element={<Hero />} />
           <Route path="*" element={<NotFound />} />
-
         </Routes>
         <footer className="footer">
           <p>© 2024 CodershubUK</p>
