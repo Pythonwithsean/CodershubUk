@@ -17,7 +17,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 2px solid black;
   gap: 20px;
   padding: 20px;
   height: max-content;
