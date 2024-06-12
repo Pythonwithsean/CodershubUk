@@ -11,7 +11,9 @@ h3 {
   margin-bottom: 40px;
 }
 
-
+.pricing-container{
+  height: 100vh;
+}
 
 .pricing-page {
   display: flex;

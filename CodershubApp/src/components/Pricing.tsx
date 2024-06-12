@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 export default function Pricing() { 
     return (
-        <Container className="container"> 
+        <Container className="container pricing-container"> 
             <Navbar/>
             <br />
             <Box component="section" sx={{ p: 2 }}>
