@@ -4,17 +4,14 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
-
 h3 {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 40px;
 }
-
 .pricing-container{
   height: 100vh;
 }
-
 .pricing-page {
   display: flex;
   justify-content: space-around;
@@ -23,53 +20,55 @@ h3 {
   padding: 20px;
   height: max-content;
 }
-
 .pricing-option {
   background-color: #f9f9f9;
   border: 1px solid #000;
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
+  width: 300px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .pricing-option:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
+.pricing-option > p {
+  text-align: center;
+}
 .pricing-option h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
-
 .pricing-option p {
   font-size: 1em;
   margin-bottom: 20px;
+  font-weight: 600;
 }
-
 .pricing-option ul {
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
 }
-
 .pricing-option ul li {
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
+  font-weight: 600;
 }
-
 .pricing-option ul li::before {
   content: "•";
-  color: #000;
+  color: red;
   position: absolute;
   left: 0;
 }
 
-button {
+a> button  {
   background-color: #000;
+  margin: 0 auto 0 auto;
   color: #fff;
   border: none;
   border-radius: 5px;

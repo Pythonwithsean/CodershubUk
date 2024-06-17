@@ -260,7 +260,38 @@ h2{
   align-items: center;
   border: 2px solid black;
   margin: 15px auto;
+  max-height: 1000px;
 }
+
+/* Container for the code block */
+.code-container {
+  margin: 20px 0;
+  min-height: 500px;
+}
+
+/* Styling the pre tag */
+.code-container pre {
+  background-color: rgb(255,255,255);
+  box-shadow: 8px 4px black;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  min-height: 500px;
+}
+.code-container pre:hover{
+  box-shadow: 0px 0px black;
+  border: 5px solid black;
+}
+
+/* Styling the code tag */
+.code-container code {
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  color: #000;
+  font-weight: 600;
+}
+
 
 /* Media Query for Tablets */
 @media screen and (max-width: 900px){
