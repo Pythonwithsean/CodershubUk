@@ -59,6 +59,7 @@
     top: 36px;
     display: none;
     background-color: transparent;
+    border: none;
   }
 
   .bm-menu-wrap{
@@ -66,7 +67,6 @@
     z-index: 999;
 
   }
-
 
   .bm-burger-bars{
     background-color: #000;
