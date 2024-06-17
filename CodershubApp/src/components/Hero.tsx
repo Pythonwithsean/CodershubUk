@@ -376,9 +376,9 @@ const Hero = () => {
         >
           <Grid
             item
-            xs={2}
+            xs={1}
             md={11}
-            sm={4}
+            sm={2}
             style={{
               margin: "0 auto",
             }}
@@ -424,10 +424,7 @@ func main() {
               of just reading through theory, our students get hands-on
               experience by working on real-world applications. This approach
               not only reinforces the concepts they learn but also helps them
-              build a robust portfolio. By solving coding challenges, building
-              complete applications, and collaborating with peers, students
-              develop a deeper understanding of programming and gain the
-              confidence to tackle complex problems.
+              build a robust portfolio.
             </p>
           </Grid>
         </Grid>
@@ -439,7 +436,7 @@ func main() {
         <Box
           className="Box"
           component="section"
-          sx={{ p: 2, border: "1px dashed grey" }}
+          sx={{ p: 2, border: "1px dashed grey", overflowX: "scroll" }}
         >
           <p className="paragraph">
             If you have any Enquires or Questions to ask please let us Know at

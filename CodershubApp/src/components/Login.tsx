@@ -12,6 +12,7 @@ async function logout(): Promise<void> {
     return;
   }
 }
+
 // Function That Gets usersName without @
 function getUserNameFromEmail(email: string | undefined): string {
   if (typeof email === "undefined") {
@@ -29,7 +30,6 @@ function getUserNameFromEmail(email: string | undefined): string {
 type loginProps = {
   children: JSX.Element;
 };
-
 export default function Login({ children }: loginProps) {
   const [session, setSession] = useState<Session | null>(null);
   useEffect(() => {
