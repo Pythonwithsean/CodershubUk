@@ -222,6 +222,7 @@ h2{
   footer{
     background-color: #000;
     height:  100px;
+    clear: both;
     position: relative;
     bottom: 0;
     left: 0;
@@ -233,7 +234,7 @@ h2{
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
 .footer-logo{
@@ -338,12 +339,14 @@ h2{
 
   }
   footer > p{
-    font-size: 12px
+    font-size: 12px;
+    cursor: pointer;
   }
   
   .footer-logo{
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
   
 }

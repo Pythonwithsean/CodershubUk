@@ -6,58 +6,32 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Pricing from "./components/Pricing";
+import { AuthContextProvider } from "./components/Auth";
+import Payment from "./components/Payment";
+
 function App() {
   return (
     <>
-      <Router>
-        <br />
-        <br />
-        <br />
-        <Link to="/">
-          <img src="/Logo.png" className="Logo" alt="Codershub" />
-        </Link>
-        <Routes>
-          <Route
-            path="/auth"
-            element={
-              <Login>
-                <Dashboard />
-              </Login>
-            }
-          />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/" element={<Hero />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <footer className="footer">
-          <p>© 2024 CodershubUK</p>
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Cookie Policy</p>
-          <Link to="https://www.instagram.com/codershubuk/">
-            <img
-              src="/Instagram.png"
-              className="footer-logo"
-              alt="CodershubUk-instagram"
-            />
+      <AuthContextProvider>
+        <Router>
+          <br />
+          <br />
+          <br />
+          <Link to="/">
+            <img src="/Logo.png" className="Logo" alt="Codershub" />
           </Link>
-          <Link to="https://www.tiktok.com/@codershubuk">
-            <img
-              src="/Tiktok.png"
-              className="footer-logo"
-              alt="CodershubUk-Tiktok"
-            />
-          </Link>
-          <Link to="https://www.youtube.com/channel/UCh5L0QwH27DuIfV73l4zEjA">
-            <img
-              src="/Youtube.png"
-              className="footer-logo"
-              alt="CodershubUk-Tiktok"
-            />
-          </Link>
-        </footer>
-      </Router>
+          <Routes>
+            <Route path="/auth" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/pricing" element={<Pricing />} />
+
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Hero />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </AuthContextProvider>
     </>
   );
 }

@@ -3,6 +3,7 @@ import "../App.css";
 import "../styles/pricingpage.css";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Pricing() {
   return (
@@ -79,6 +80,7 @@ export default function Pricing() {
           </div>
         </div>
       </Box>
+      <Footer />
     </Container>
   );
 }

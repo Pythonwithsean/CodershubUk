@@ -1,48 +1,32 @@
-import { useState, useEffect } from "react";
-import { Session } from "@supabase/supabase-js";
+import { useEffect } from "react";
 import { Auth } from "@supabase/auth-ui-react";
 import "../styles/login.css";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { supabase } from "./SupabaseClient";
-
-async function logout(): Promise<void> {
-  const { error } = await supabase.auth.signOut();
-  if (error != null) {
-    console.error(error);
-    return;
-  }
-}
-
-// Function That Gets usersName without @
-function getUserNameFromEmail(email: string | undefined): string {
-  if (typeof email === "undefined") {
-    return "";
-  }
-  let endPtr = 0;
-  for (let i = 0; i < email.length; i++) {
-    if (email[i] === "@") {
-      endPtr = i;
-    }
-  }
-  return email.substring(0, endPtr);
-}
-
-type loginProps = {
-  children: JSX.Element;
-};
-export default function Login({ children }: loginProps) {
-  const [session, setSession] = useState<Session | null>(null);
+import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "./Auth";
+export default function Login() {
+  const { session, setSession } = useAuthContext();
+  const navigate = useNavigate();
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
     });
+
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
     });
+
     return () => subscription.unsubscribe();
-  }, []);
+  }, [setSession]);
+
+  useEffect(() => {
+    if (session) {
+      navigate("/dashboard");
+    }
+  }, [session, navigate]);
 
   if (!session) {
     return (
@@ -87,19 +71,12 @@ export default function Login({ children }: loginProps) {
               },
               theme: ThemeSupa,
             }}
-            view="sign_up"
+            view="sign_in"
           />
         </div>
       </div>
     );
   } else {
-    return (
-      <>
-        <h3>Welcome {getUserNameFromEmail(session.user.email)}</h3>
-        <br />
-        {children}
-        <button onClick={logout}>LogOut</button>
-      </>
-    );
+    return <></>;
   }
 }

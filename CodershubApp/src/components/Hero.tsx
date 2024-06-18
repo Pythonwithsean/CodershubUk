@@ -7,13 +7,12 @@ import Carousel from "react-material-ui-carousel";
 // @ts-ignore
 import Faq from "react-faq-component";
 import { data, config, styles } from "./data";
+import Footer from "./Footer";
 const Hero = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const imgs = [
     "/Codershubukevent-6.jpg",
     "/Codershubukevent-5.jpg",
-    "/Codershubukevent-4.jpg",
-    "/Codershubukevent-3.jpg",
     "/Codershubukevent-2.jpg",
     "/Codershubukevent-1.jpg",
   ];
@@ -373,61 +372,7 @@ const Hero = () => {
           container
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 1, sm: 2, md: 12 }}
-        >
-          <Grid
-            item
-            xs={1}
-            md={11}
-            sm={2}
-            style={{
-              margin: "0 auto",
-            }}
-          >
-            <div className="code-container">
-              <pre>
-                <code>
-                  {`package main
-
-import (
-  "fmt"
-  "math"
-)
-
-// Function to calculate the square root
-func calculateSquareRoot(value float64) float64 {
-  return math.Sqrt(value)
-}
-
-// Main function
-func main() {
-  fmt.Println("Hello, World!")
-
-  // Variables
-  var num1, num2 float64 = 16, 25
-
-  // Calculating square roots
-  sqrt1 := calculateSquareRoot(num1)
-  sqrt2 := calculateSquareRoot(num2)
-
-  // Printing results
-  fmt.Printf("The square root of %.2f is %.2f\\n", num1, sqrt1)
-  fmt.Printf("The square root of %.2f is %.2f\\n", num2, sqrt2)
-}
-          `}
-                </code>
-              </pre>
-            </div>
-            <h3>Learn Coding By Doing</h3>
-            <p className="paragraph">
-              At our Codershub Uk, we believe that the best way to learn
-              programming is by actively engaging in practical projects. Instead
-              of just reading through theory, our students get hands-on
-              experience by working on real-world applications. This approach
-              not only reinforces the concepts they learn but also helps them
-              build a robust portfolio.
-            </p>
-          </Grid>
-        </Grid>
+        ></Grid>
       </Container>
       <br />
       <br />
@@ -460,6 +405,7 @@ func main() {
         <div>
           <Faq data={data} styles={styles} config={config} />
         </div>
+        <Footer />
       </Container>
     </>
   );
