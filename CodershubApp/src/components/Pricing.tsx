@@ -34,7 +34,7 @@ export default function Pricing() {
               <br />
               <br />
             </ul>
-            <Link to="/bookings">
+            <Link to="/dashboard/bookings/demo">
               <button>Demo Now</button>
             </Link>
           </div>
@@ -59,7 +59,7 @@ export default function Pricing() {
               </li>
               <br />
             </ul>
-            <Link to="/auth">
+            <Link to="/dashboard/bookings/mlp/120">
               <button>Apply</button>
             </Link>
           </div>
@@ -83,7 +83,7 @@ export default function Pricing() {
               </li>
               <li>Certification: Earn a certificate upon course completion.</li>
             </ul>
-            <Link to="/auth">
+            <Link to="/dashboard/bookings/alp/1440">
               <button>Apply</button>
             </Link>
           </div>

@@ -34,7 +34,7 @@ export default function Dashboard({ children }: DashboardProps) {
       <Container className="dashboard-container">
         <Box>
           <div className="content">
-            <h2>Hello {getUserNameFromEmail(session?.user.email)}</h2>
+            <h3>Hello {getUserNameFromEmail(session?.user.email)}</h3>
           </div>
           {/* Side Bar for Dashboard */}
           <div className="sidebar">
@@ -53,7 +53,7 @@ export default function Dashboard({ children }: DashboardProps) {
                 <Link to="/dashboard/settings">Settings</Link>
               </li>
               <li>
-                <Link to="/dashboard/settings">Notifications</Link>
+                <Link to="/dashboard/notifications">Notifications</Link>
               </li>
               <li>
                 <Link to="https://g.page/r/CX2u9LwjOawkEB0/review">
@@ -61,10 +61,10 @@ export default function Dashboard({ children }: DashboardProps) {
                 </Link>
               </li>
               <li>
-                <Link to="/dashboard/payments">Time Table</Link>
+                <Link to="/dashboard/timetable">Time Table</Link>
               </li>
               <li>
-                <Link to="/dashboard/payments">Pay Now</Link>
+                <Link to="/pricing">Pay Now</Link>
               </li>
               <li>
                 <button onClick={logout}>Logout</button>
