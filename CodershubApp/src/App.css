@@ -229,6 +229,8 @@ h2{
     gap: 0 17px;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     width: 100%;
     justify-content: center;
     color: white;
