@@ -16,18 +16,17 @@
     border-right: 2px solid #000000;
     background-color: 		#fff;
     padding: 0 10px 0 10px;
-		flex-direction: column;
-	
+		flex-direction: column;	
 }
 
-.sidebar > ul{
+.sidebar > ul, .sidebar > button{
     width: 100%; 
 		list-style: none;
 		padding: 0;
 		margin: 0
 }
 
-li > a{
+li > a, li > button{
     list-style: none;
     margin: 10px 0;
     padding: 10px 0;
@@ -41,7 +40,7 @@ li > a{
     border-radius: 15px;
 		text-decoration: none;
  }
-li > a:hover{
+li > a:hover, li > a:active, li > a:focus, li > button:hover, li  > button:active, li > button:focus{
     background-color: #000000;
 		color: #fff;
     cursor: pointer;    
@@ -51,11 +50,10 @@ li > a:hover{
     background-color: #000000;
 }
 
-.sidebar> ul li > button{
-    background-color: transparent;
-    border: none;
-    padding: 0 5px 0 5px;
-    width: 67%;
+li > button{
+    background-color: #fff;
+		border-radius: 0;
+    padding: 10px 5px 10px 5px;
 }
 
 

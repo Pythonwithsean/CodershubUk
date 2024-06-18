@@ -21,11 +21,4 @@ export async function getUserDetails() {
 }
 
 
-export async function logout(): Promise<void> {
-    const { error } = await supabase.auth.signOut();
-    if (error != null) {
-      console.error(error);
-      return;
-    }
-}
 

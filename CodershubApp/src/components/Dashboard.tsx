@@ -2,17 +2,29 @@ import { useNavigate, Link } from "react-router-dom";
 import { useAuthContext } from "./Auth";
 import { getUserNameFromEmail } from "../utils/functions";
 import { useEffect } from "react";
+import { supabase } from "./SupabaseClient";
 import "../styles/dashboard.css"; // Import custom styles
 import { Container, Box } from "@mui/material";
+
 export default function Dashboard() {
   const navigate = useNavigate();
   const { session } = useAuthContext();
+
+  async function logout(): Promise<void> {
+    const { error } = await supabase.auth.signOut();
+    if (error != null) {
+      console.error(error);
+      return;
+    }
+    navigate("/");
+  }
 
   useEffect(() => {
     if (session === null) {
       navigate("/auth");
     }
   }, [session, navigate]);
+
   return (
     <>
       <Container className="dashboard-container">
@@ -32,6 +44,9 @@ export default function Dashboard() {
               </li>
               <li>
                 <Link to="/">Settings</Link>
+              </li>
+              <li>
+                <button onClick={logout}>Logout</button>
               </li>
             </ul>
           </div>
