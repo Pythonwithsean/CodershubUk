@@ -6,7 +6,11 @@ import { supabase } from "./SupabaseClient";
 import "../styles/dashboard.css"; // Import custom styles
 import { Container, Box } from "@mui/material";
 
-export default function Dashboard() {
+type DashboardProps = {
+  children?: JSX.Element;
+};
+
+export default function Dashboard({ children }: DashboardProps) {
   const navigate = useNavigate();
   const { session } = useAuthContext();
 
@@ -37,19 +41,37 @@ export default function Dashboard() {
             <h3>Dashboard</h3>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Go Home</Link>
               </li>
               <li>
-                <Link to="/">Courses</Link>
+                <Link to="/dashboard/courses">Courses</Link>
               </li>
               <li>
-                <Link to="/">Settings</Link>
+                <Link to="/dashboard/bookings">Bookings</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/settings">Settings</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/settings">Notifications</Link>
+              </li>
+              <li>
+                <Link to="https://g.page/r/CX2u9LwjOawkEB0/review">
+                  Rate Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashboard/payments">Time Table</Link>
+              </li>
+              <li>
+                <Link to="/dashboard/payments">Pay Now</Link>
               </li>
               <li>
                 <button onClick={logout}>Logout</button>
               </li>
             </ul>
           </div>
+          <div className="main-content">{children}</div>
         </Box>
       </Container>
     </>

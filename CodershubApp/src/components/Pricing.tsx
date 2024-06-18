@@ -25,6 +25,14 @@ export default function Pricing() {
               <li>Get a taster of our discord oriented lessons</li>
               <li>Learn Programming Using Python</li>
               <li>Decide if you want to enroll Monthly Membership</li>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
             </ul>
             <Link to="/bookings">
               <button>Demo Now</button>
@@ -49,6 +57,7 @@ export default function Pricing() {
                 24/7 Support: Get help anytime from our community and
                 instructors
               </li>
+              <br />
             </ul>
             <Link to="/auth">
               <button>Apply</button>
