@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 *.env
+SupabaseClient.ts
 /test-results/
 /playwright-report/
 /blob-report/
