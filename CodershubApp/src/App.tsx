@@ -11,6 +11,7 @@ import Payment from "./components/Payment";
 import Courses from "./components/Courses";
 import Settings from "./components/Settings";
 import Bookings from "./components/Bookings";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
   return (
@@ -20,11 +21,11 @@ function App() {
           <br />
           <br />
           <br />
-          <Link to="/">
+          {/* <Link to="/">
             <img src="/Logo.png" className="Logo" alt="Codershub" />
-          </Link>
+          </Link> */}
           <Routes>
-            <Route path="/auth" element={<Login />} />
+            {/* <Route path="/auth" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/dashboard/payments" element={<Payment />} />
@@ -40,8 +41,8 @@ function App() {
             <Route
               path="/dashboard/bookings"
               element={<Dashboard children={<Bookings />} />}
-            />
-            <Route path="/" element={<Hero />} />
+            /> */}
+            <Route path="/" element={<ComingSoon />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
