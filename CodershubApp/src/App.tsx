@@ -1,16 +1,16 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Hero from "./components/Hero";
-import NotFound from "./components/NotFound";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-import Dashboard from "./components/Dashboard";
-import Pricing from "./components/Pricing";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Hero from "./components/Hero";
+// import NotFound from "./components/NotFound";
+// import Signup from "./components/Signup";
+// import Login from "./components/Login";
+// import Dashboard from "./components/Dashboard";
+// import Pricing from "./components/Pricing";
 import { AuthContextProvider } from "./components/Auth";
-import Payment from "./components/Payment";
-import Courses from "./components/Courses";
-import Settings from "./components/Settings";
-import Bookings from "./components/Bookings";
+// import Payment from "./components/Payment";
+// import Courses from "./components/Courses";
+// import Settings from "./components/Settings";
+// import Bookings from "./components/Bookings";
 import ComingSoon from "./components/ComingSoon";
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
               element={<Dashboard children={<Bookings />} />}
             /> */}
             <Route path="/" element={<ComingSoon />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<ComingSoon />} />
           </Routes>
         </Router>
       </AuthContextProvider>
